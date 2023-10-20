@@ -31,7 +31,7 @@
                 <img src="images/wind.png">
                 <div>
                     <p>Άνεμος:</p>
-                    <p class="wind">16  χλμ/ώρα</p>
+                    <p class="wind">16 χλμ/ώρα</p>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@ async function checkWeather(city){
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.wind.speed + "χμ/ώ";
+    document.querySelector(".wind").innerHTML = data.wind.speed + " χλμ/ώρα";
 
     if(data.weather[0].main == "Clouds"){
         weatherIcon.src = "images/clouds.png";
